@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { QueryClient, QueryClientProvider } from 'react-query';
+import { ReactQueryDevtools } from 'react-query/devtools';
 import { ThemeProvider } from '@/context/theme-provider';
 import { Header } from '@/components/Header';
 import { View } from '@/types/common';
@@ -22,6 +23,7 @@ function App() {
           {view === View.EditProfile ? <EditProfile /> : null}
         </main>
       </ThemeProvider>
+      <ReactQueryDevtools initialIsOpen={false} position="bottom-right" />
     </QueryClientProvider>
   );
 }
