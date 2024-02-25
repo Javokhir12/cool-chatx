@@ -75,4 +75,6 @@ npm run e2e:headed
 - [Vitest](https://vitest.dev/)- A Vite-native testing framework. In challenge, it's said to use `Jest` but since I'm using `Vite` as build tool it requires too much effort to make `Vite` work with `Jest` so I went with `Vitest`. But `Vitest` is compatible with `Jest` api.
 - [Tailwind.css](https://tailwindcss.com/docs/installation) - A utility-first CSS framework
 - [msw](https://mswjs.io/) -Mock Service Worker is an API mocking library
-```
+
+## Potential improvement
+- I'm managing `form` state with `React` hooks since `form` is such a simple. But I'd choose `react-hook-form` + `zod` combo to improve validation and performance of form and make code more readable.
