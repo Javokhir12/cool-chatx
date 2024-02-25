@@ -1,5 +1,7 @@
 # CoolChatX - Frontend Challenge
 
+### See the live app - [https://cool-chatx.vercel.app/](https://cool-chatx.vercel.app/)
+
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
