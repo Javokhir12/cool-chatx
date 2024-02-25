@@ -1,4 +1,4 @@
-# CoolChatX -Frontend Challenge
+# CoolChatX - Frontend Challenge
 
 ## Table of Contents
 
