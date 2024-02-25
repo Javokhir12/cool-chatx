@@ -20,7 +20,7 @@ function App() {
           {view === View.ProfileDetails ? (
             <ProfileDetails setView={setView} />
           ) : null}
-          {view === View.EditProfile ? <EditProfile /> : null}
+          {view === View.EditProfile ? <EditProfile setView={setView} /> : null}
         </main>
       </ThemeProvider>
       <ReactQueryDevtools initialIsOpen={false} position="bottom-right" />
