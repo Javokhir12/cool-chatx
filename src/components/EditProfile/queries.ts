@@ -10,7 +10,7 @@ async function updateUserProfile(profileData: UserProfileBody) {
   });
 
   if (!response.ok) {
-    throw new Error('Error while updating user profile details');
+    throw new Error('Error while updating user profile');
   }
 
   return response.json();
