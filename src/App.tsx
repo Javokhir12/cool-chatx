@@ -1,5 +1,11 @@
+import { QueryClient, QueryClientProvider } from 'react-query';
+
+const queryClient = new QueryClient();
+
 function App() {
-  return <main>CoolChatX</main>;
+  <QueryClientProvider client={queryClient}>
+    <main>CoolChatX</main>;
+  </QueryClientProvider>;
 }
 
 export default App;
