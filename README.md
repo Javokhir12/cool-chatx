@@ -70,7 +70,7 @@ npm run e2e:headed
 
 - [React](https://react.dev) - library for building UI components
 - [TypeScript](https://www.typescriptlang.org/docs/) - for static type checking
-- [Vitest](https://vitest.dev/)- A Vite-native testing framework. In challenge, it's said to to use `Jest` but since I'm using `Vite` as build tool it requires too much effort to make `Vite` with `Jest` so I went with `Vitest`. But `Vitest` is compatible with `Jest` api.
+- [Vitest](https://vitest.dev/)- A Vite-native testing framework. In challenge, it's said to use `Jest` but since I'm using `Vite` as build tool it requires too much effort to make `Vite` work with `Jest` so I went with `Vitest`. But `Vitest` is compatible with `Jest` api.
 - [Tailwind.css](https://tailwindcss.com/docs/installation) - A utility-first CSS framework
 - [msw](https://mswjs.io/) -Mock Service Worker is an API mocking library
 ```
