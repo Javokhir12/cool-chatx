@@ -1,30 +1,76 @@
-# React + TypeScript + Vite
+# CoolChatX - Frontend Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Contents
 
-Currently, two official plugins are available:
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Getting Started](#getting-started)
+- [Testing](#testing)
+- [Technical stack](#technical-stack)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Prerequisites
 
-## Expanding the ESLint configuration
+- Node.js 16 or later
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+Instal the dependencies required for the project
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+npm i
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Getting Started
+
+To start the development server, run next command:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5174](http://localhost:5174) to see the result.
+
+You can find source files in `/src` folder.
+
+To build production artefacts, run next command:
+
+```bash
+npm run build
+```
+
+## Testing
+
+To run unit tests, run next command
+
+```bash
+npm run test
+```
+
+To include coverage info, run next command
+
+```bash
+npm run test:coverage
+```
+
+Before running e2e test make sure the app is up and running.
+
+To run e2e tests in headless mode (run tests in terminal), run next command
+
+```bash
+npm run e2e:headless
+```
+
+To run e2e tests in headed mode (opens up browser window), run next command
+
+```bash
+npm run e2e:headed
+```
+
+## Technical stack
+
+- [React](https://react.dev) - library for building UI components
+- [TypeScript](https://www.typescriptlang.org/docs/) - for static type checking
+- [Vitest](https://vitest.dev/)- A Vite-native testing framework. In challenge, it's said to to use `Jest` but since I'm using `Vite` as build tool it requires too much effort to make `Vite` with `Jest` so I went with `Vitest`. But `Vitest` is compatible with `Jest` api.
+- [Tailwind.css](https://tailwindcss.com/docs/installation) - A utility-first CSS framework
+- [msw](https://mswjs.io/) -Mock Service Worker is an API mocking library
+```
