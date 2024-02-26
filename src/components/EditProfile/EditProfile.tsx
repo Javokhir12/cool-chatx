@@ -1,4 +1,4 @@
-import { ChangeEvent, FormEvent, useEffect, useState } from 'react';
+import { ChangeEvent, FormEvent, useLayoutEffect, useState } from 'react';
 import { View } from '@/types/common';
 import { useUserProfile } from '@/components/ProfileDetails/queries';
 import { Button } from '@/components/Button';
@@ -37,7 +37,7 @@ export function EditProfile({ setView }: IEditProfileProps) {
   const { data, isFetching } = useUserProfile();
   const mutation = useUpdateUserProfile();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     // Pre-populate form fields with user data from server
     if (data) {
       setFormState({
